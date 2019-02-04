@@ -1,0 +1,13 @@
+language: bash
+dist: xenial
+
+services: docker
+
+before_script:
+  - IMAGE_TAG="minchao/aws-sam-cli:latest"
+
+script:
+  - docker build -t "$IMAGE_TAG" .
+
+after_script:
+  - docker images
