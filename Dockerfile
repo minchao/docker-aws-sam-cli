@@ -3,6 +3,7 @@ FROM alpine:3.9
 RUN set -eux; \
 	apk add --no-cache \
 		gcc \
+		jq \
 		python3 \
 		python3-dev \
 		make \
